@@ -289,7 +289,7 @@ end
 wait(0.1)
 shuaxinlb(true)
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/DesrtKnock/DesrtKnock-X/refs/heads/main/OrionLib')))()
-local Window = OrionLib:MakeWindow({IntroText = "北极星脚本中心V5",Name = " 丨北极星脚本中心丨V5 执行器:" ..identifyexecutor() , HidePremium = false, SaveConfig = true, ConfigFolder = ""})
+local Window = OrionLib:MakeWindow({IntroText = "北极星脚本中心V4",Name = " 丨北极星脚本中心丨V4 执行器:" ..identifyexecutor() , HidePremium = false, SaveConfig = true, ConfigFolder = ""})
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 local Tab = Window:MakeTab({
 	Name = "自动发言",
@@ -844,6 +844,13 @@ Tab:AddButton ({
 	Name = "万能工具箱",
 	Callback = function ()
 	 loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()
+	end
+})
+
+Tab:AddButton ({
+	Name = "玩家加入游戏提示",
+	Callback = function ()
+	 loadstring(game:HttpGet("https://raw.githubusercontent.com/boyscp/scriscriptsc/main/bbn.lua"))()
 	end
 })
 
